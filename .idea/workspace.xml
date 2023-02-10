@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e94e1a1-5742-4f46-afdf-6167678f742a" name="Changes" comment="Added wordle_text.py">
+    <list default="true" id="6e94e1a1-5742-4f46-afdf-6167678f742a" name="Changes" comment="changed wordle_text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordle_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordle_text.py" afterDir="false" />
     </list>
@@ -33,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Python"
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -65,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676044612162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changed wordle_text">
+      <created>1676044933593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676044933593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added wordle_text.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added wordle_text.py" />
+    <MESSAGE value="changed wordle_text" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed wordle_text" />
   </component>
 </project>

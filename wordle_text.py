@@ -24,7 +24,7 @@ def main():
 def game(secret_words, all_words):
     curr = random.choice(secret_words)
     guess = ''
-    history = '\n'
+    history = list()
     print()
     lettersGuessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
                       'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -32,20 +32,21 @@ def game(secret_words, all_words):
     while guess != curr and rounds != 6:
         guess = input('Enter your guess. A 5 letter word: ').upper()
         if guess in all_words:
-            temp = curr
-            word = ''
+            temp = list(curr)
+            word = list('-----')
             for i, c in enumerate(guess):
                 if c in lettersGuessed:
                     lettersGuessed.remove(c)
                 if curr[i] == c:
-                    word += 'G'
-                elif c in temp:
-                    temp = temp[1:]
-                    word += 'O'
-                else:
-                    word += '-'
-            history += word + '\n' + guess + '\n'
-            print(history)
+                    word[i] = 'G'
+                    temp.remove(c)
+            for i, c in enumerate(guess):
+                if word[i] == '-' and c in curr and c in temp:
+                    word[i] = 'O'
+                    temp.remove(c)
+            history.append(str(word))
+            history.append(guess)
+            print(*history, sep='\n')
             print('Unused letters:', *lettersGuessed, sep=' ')
             print()
             rounds += 1
