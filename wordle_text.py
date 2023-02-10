@@ -31,6 +31,7 @@ def game(secret_words, all_words):
     rounds = 0
     while guess != curr and rounds != 6:
         guess = input('Enter your guess. A 5 letter word: ').upper()
+        print()
         if guess in all_words:
             temp = list(curr)
             word = list('-----')
@@ -44,9 +45,10 @@ def game(secret_words, all_words):
                 if word[i] == '-' and c in curr and c in temp:
                     word[i] = 'O'
                     temp.remove(c)
-            history.append(str(word))
+            history.append(''.join(word))
             history.append(guess)
             print(*history, sep='\n')
+            print()
             print('Unused letters:', *lettersGuessed, sep=' ')
             print()
             rounds += 1
