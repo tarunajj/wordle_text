@@ -46,7 +46,7 @@ def game(secret_words, all_words):
                     word += '-'
             history += word + '\n' + guess + '\n'
             print(history)
-            print('Unused letters: ', *lettersGuessed, sep=' ')
+            print('Unused letters:', *lettersGuessed, sep=' ')
             print()
             rounds += 1
         else:

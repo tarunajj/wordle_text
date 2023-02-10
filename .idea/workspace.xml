@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e94e1a1-5742-4f46-afdf-6167678f742a" name="Changes" comment="Added wordle_text.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordle_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/wordle_text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +38,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Downloads\pythoncs109\wordle_text" />
       <recent name="C:\Downloads\pythoncs109\wordle_text\venv" />
     </key>
   </component>
@@ -56,7 +58,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676044472474</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added wordle_text.py">
+      <created>1676044612162</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676044612162</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
