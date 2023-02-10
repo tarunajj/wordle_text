@@ -83,7 +83,35 @@
       <option name="project" value="LOCAL" />
       <updated>1676046480807</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="changed wordle_text">
+      <created>1676046609307</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046609307</updated>
+    </task>
+    <task id="LOCAL-00007" summary="changed wordle_text">
+      <created>1676046689061</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046689061</updated>
+    </task>
+    <task id="LOCAL-00008" summary="changed wordle_text">
+      <created>1676046780699</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046780699</updated>
+    </task>
+    <task id="LOCAL-00009" summary="changed wordle_text">
+      <created>1676046878898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676046878898</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
