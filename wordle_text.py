@@ -55,7 +55,7 @@ def game(secret_words, all_words):
         else:
             print(guess, 'is not a valid word. Please try again.\n')
     results = ('Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew')
-    if rounds < 6:
+    if rounds <= 6:
         print(f'You win. {results[rounds - 1]}!\n')
     else:
         print(f'Not quite. The secret word was {curr}.\n')
