@@ -95,14 +95,14 @@ def get_words():
         combined with other words that are valid user guesses.
     """
     temp_secret_words = []
-    with open('venv/secret_words.txt', 'r') as data_file:
+    with open('secret_words.txt', 'r') as data_file:
         all_lines = data_file.readlines()
         for line in all_lines:
             temp_secret_words.append(line.strip().upper())
     temp_secret_words.sort()
     secret_words = tuple(temp_secret_words)
     all_words = set(secret_words)
-    with open('venv/other_valid_words.txt', 'r') as data_file:
+    with open('other_valid_words.txt', 'r') as data_file:
         all_lines = data_file.readlines()
         for line in all_lines:
             all_words.add(line.strip().upper())
