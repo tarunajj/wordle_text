@@ -29,7 +29,7 @@ def game(secret_words, all_words):
     lettersGuessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
                       'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     rounds = 0
-    while guess != curr and rounds <= 6:
+    while guess != curr and rounds < 6:
         guess = input('Enter your guess. A 5 letter word: ').upper()
         print()
         if guess in all_words:
@@ -55,7 +55,7 @@ def game(secret_words, all_words):
         else:
             print(guess, 'is not a valid word. Please try again.\n')
     results = ('Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew')
-    if rounds <= 6:
+    if guess == curr:
         print(f'You win. {results[rounds - 1]}!\n')
     else:
         print(f'Not quite. The secret word was {curr}.\n')
