@@ -33,8 +33,8 @@ def game(secret_words, all_words):
     history = list()
     print()
     letters_guessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
-                      'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-                      'W', 'X', 'Y', 'Z']
+                       'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+                       'W', 'X', 'Y', 'Z']
     rounds = 0
     while guess != curr and rounds < 6:
         guess = input('Enter your guess. A 5 letter word: ').upper()
