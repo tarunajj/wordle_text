@@ -32,9 +32,9 @@ def game(secret_words, all_words):
     guess = ''
     history = list()
     print()
-    letters_guessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
-                       'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
-                       'W', 'X', 'Y', 'Z']
+    lettersGuessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+                      'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+                      'W', 'X', 'Y', 'Z']
     rounds = 0
     while guess != curr and rounds < 6:
         guess = input('Enter your guess. A 5 letter word: ').upper()
@@ -42,21 +42,21 @@ def game(secret_words, all_words):
         if guess in all_words:
             temp = list(curr)
             word = list('-----')
-            for index, chr in enumerate(guess):
-                if chr in letters_guessed:
-                    letters_guessed.remove(chr)
-                if curr[i] == chr:
+            for i, c in enumerate(guess):
+                if c in lettersGuessed:
+                    lettersGuessed.remove(c)
+                if curr[i] == c:
                     word[i] = 'G'
                     temp.remove(c)
-            for index, chr in enumerate(guess):
-                if word[index] == '-' and chr in curr and chr in temp:
-                    word[index] = 'O'
-                    temp.remove(chr)
+            for i, c in enumerate(guess):
+                if word[i] == '-' and c in curr and c in temp:
+                    word[i] = 'O'
+                    temp.remove(c)
             history.append(''.join(word))
             history.append(guess)
             print(*history, sep='\n')
             print()
-            print('Unused letters:', *letters_guessed, sep=' ')
+            print('Unused letters:', *lettersGuessed, sep=' ')
             print()
             rounds += 1
         else:
