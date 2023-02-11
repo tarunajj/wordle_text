@@ -22,12 +22,19 @@ def main():
 
 
 def game(secret_words, all_words):
+    """ Plays a game of wordle
+        1. Gives a player six incorrect valid word guesses until they guess the
+        secret word
+        2. Keeps track of letters guessed during the game.
+        2. Allows the player to request to play again.
+    """
     curr = random.choice(secret_words)
     guess = ''
     history = list()
     print()
-    lettersGuessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O',
-                      'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    lettersGuessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+                      'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+                      'W', 'X', 'Y', 'Z']
     rounds = 0
     while guess != curr and rounds < 6:
         guess = input('Enter your guess. A 5 letter word: ').upper()
@@ -54,7 +61,12 @@ def game(secret_words, all_words):
             rounds += 1
         else:
             print(guess, 'is not a valid word. Please try again.\n')
-    results = ('Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew')
+    result(curr, guess, rounds, secret_words, all_words)
+
+
+def result(curr, guess, rounds, secret_words, all_words):
+    results = (
+        'Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew')
     if guess == curr:
         print(f'You win. {results[rounds - 1]}!\n')
     else:
