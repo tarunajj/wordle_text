@@ -25,8 +25,8 @@ def game(secret_words, all_words):
     """ Plays a game of wordle
         1. Gives a player six incorrect valid word guesses until they guess the
         secret word
-        2. Keeps track of letters guessed during the game.
-        2. Allows the player to request to play again.
+        2. Shows player how close a guess is to the actual word.
+        3. Keeps track of letters guessed during the game.
     """
     curr = random.choice(secret_words)
     guess = ''
@@ -65,6 +65,10 @@ def game(secret_words, all_words):
 
 
 def result(curr, guess, rounds, secret_words, all_words):
+    """ Deals with the result of a game
+        1. Tells player if they won or lost
+        2. Allows the player the chance to play again
+    """
     results = (
         'Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew')
     if guess == curr:
