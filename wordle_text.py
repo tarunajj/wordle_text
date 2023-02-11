@@ -23,8 +23,8 @@ def main():
 
 def game(secret_words, all_words):
     """ Plays a game of wordle
-        1. Gives a player six incorrect valid word guesses until they guess the
-        secret word
+        1. Gives a player six incorrect valid word guesses
+        until they guess the secret word
         2. Shows player how close a guess is to the actual word.
         3. Keeps track of letters guessed during the game.
     """
