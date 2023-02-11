@@ -32,7 +32,7 @@ def game(secret_words, all_words):
     guess = ''
     history = list()
     print()
-    lettersGuessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+    letters_guessed = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
                       'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
                       'W', 'X', 'Y', 'Z']
     rounds = 0
@@ -43,8 +43,8 @@ def game(secret_words, all_words):
             temp = list(curr)
             word = list('-----')
             for i, c in enumerate(guess):
-                if c in lettersGuessed:
-                    lettersGuessed.remove(c)
+                if c in letters_guessed:
+                    letters_guessed.remove(c)
                 if curr[i] == c:
                     word[i] = 'G'
                     temp.remove(c)
@@ -56,7 +56,7 @@ def game(secret_words, all_words):
             history.append(guess)
             print(*history, sep='\n')
             print()
-            print('Unused letters:', *lettersGuessed, sep=' ')
+            print('Unused letters:', *letters_guessed, sep=' ')
             print()
             rounds += 1
         else:
